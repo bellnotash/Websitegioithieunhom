@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Tên Nhóm] - Trang Giới Thiệu</title>
+    <meta name="description" content="Chúng tôi là một nhóm [lĩnh vực] đam mê và sáng tạo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="home-page">
+    <header class="transparent-header">
+        <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    <a href=""><span>[Tên Nhóm]</span></a>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Trang Chủ</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">Về Chúng Tôi</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#members">Thành Viên</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Dự Án</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Liên Hệ</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#home">Trang Chủ</a>
+                    <a href="#about">Về Chúng Tôi</a>
+                    <a href="#members">Thành Viên</a>
+                    <a href="#projects">Dự Án</a>
+                    <a href="#contact">Liên Hệ</a>
+                </div>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="hero-container">
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Chào mừng đến với <span>[Tên Nhóm]</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">Chúng tôi là <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Chúng tôi là một nhóm [mô tả ngắn về lĩnh vực hoạt động]</p>
+                <a href="#about" class="cta-button custom-btn btn-hire" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1300">
+                    <span>Tìm Hiểu Thêm</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <main>
+        <section id="about" class="about">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>Về Chúng Tôi</span>
+                </div>
+                <div class="about-details">
+                    <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="image-container">
+                            <img src="thgm.png" alt="[Tên Nhóm]">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">[Slogan hoặc Mục tiêu của Nhóm]</div>
+                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">[Mô tả chi tiết về nhóm, mục tiêu, và cách chúng tôi làm việc cùng nhau]</p>
+                        <ul class="about-features">
+                            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                <i class="fas fa-check-circle"></i>
+                                <span>[Điểm mạnh/Giá trị 1]</span>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                                <i class="fas fa-check-circle"></i>
+                                <span>[Điểm mạnh/Giá trị 2]</span>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                                <i class="fas fa-check-circle"></i>
+                                <span>[Điểm mạnh/Giá trị 3]</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="learn-more-btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+                            Liên hệ với chúng tôi
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="members" class="members">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>Thành Viên</span>
+                </div>
+                <div class="member-grid">
+                    <div class="member-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                        <div class="member-image">
+                            <img src="avatar1.jpg" alt="Tên Thành Viên 1">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Tên Thành Viên 1</h3>
+                            <p>Vai trò trong nhóm</p>
+                        </div>
+                    </div>
+                    <div class="member-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="member-image">
+                            <img src="avatar2.jpg" alt="Tên Thành Viên 2">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Tên Thành Viên 2</h3>
+                            <p>Vai trò trong nhóm</p>
+                        </div>
+                    </div>
+                    <div class="member-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <div class="member-image">
+                            <img src="avatar3.jpg" alt="Tên Thành Viên 3">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Tên Thành Viên 3</h3>
+                            <p>Vai trò trong nhóm</p>
+                        </div>
+                    </div>
+                    <div class="member-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <div class="member-image">
+                            <img src="avatar4.jpg" alt="Tên Thành Viên 4">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Tên Thành Viên 4</h3>
+                            <p>Vai trò trong nhóm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>Dự Án</span>
+                </div>
+                <div class="project-grid">
+                    <!-- Lặp lại cấu trúc này cho mỗi dự án -->
+                    <div class="project" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="project-image">
+                            <img src="avatar5.jpg" alt="Tên Dự Án">
+                        </div>
+                        <div class="project-info">
+                            <h3>Tên Dự Án</h3>
+                            <p>Mô tả ngắn về dự án...</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Html</span>
+                                <span class="project-tag">Css</span>
+                                <span class="project-tag">Js</span>
+                                <span class="project-tag">Php</span>
+                                <span class="project-tag">Mysql</span>
+                            </div>
+                            <a href="#" class="project-link">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <!-- Thêm các dự án khác tương tự -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>Liên Hệ</span>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <h3>Thông Tin Liên Lạc</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ, TP. HCM</p>
+                        <p><i class="fas fa-phone"></i> +84 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> info@tennhom.com</p>
+                        <p><i class="fas fa-clock"></i> Thứ 2 - Thứ 6: 9:00 - 18:00</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2441240214475!2d106.80137031121279!3d10.869027757432933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527e7e8abb0eb%3A0xec43e4b99472c18a!2zVUlUIC0gQ-G7lW5nIEE!5e0!3m2!1svi!2s!4v1729010474025!5m2!1svi!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <form id="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <input type="text" name="name" placeholder="Họ và tên" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="phone" placeholder="Số điện thoại" required>
+                        <textarea name="message" placeholder="Nội dung liên hệ" required></textarea>
+                        <div class="captcha">
+                            <img src="captcha.php" alt="CAPTCHA">
+                            <input type="text" name="captcha" placeholder="Nhập mã xác nhận" required>
+                        </div>
+                        <button type="submit" class="btn contact-btn project-send-btn">
+                            <span>Gửi</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="privacy-policy" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                    <h3>Chính Sách Bảo Mật</h3>
+                    <p>Chúng tôi cam kết bảo vệ thông tin cá nhân của bạn. Thông tin liên hệ chỉ được sử dụng để phản hồi yêu cầu của bạn và sẽ không được chia sẻ với bên thứ ba. Xem chi tiết <a href="#">Chính sách bảo mật</a> của chúng tôi.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="logo-text">[Tên Nhóm]</h2>
+                <p>
+                    [Mô tả ngắn về nhóm hoặc slogan]
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; info@tennhom.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Liên Kết Nhanh</h2>
+                <ul>
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#about">Về Chúng Tôi</a></li>
+                    <li><a href="#members">Thành Viên</a></li>
+                    <li><a href="#projects">Dự Án</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Liên Hệ Với Chúng Tôi</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Email của bạn...">
+                    <textarea name="message" class="text-input contact-input" placeholder="Tin nhắn của bạn..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">        
+                        <span>Gửi</span>
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 [Tên Nhóm] | Thiết kế bởi [Tên Nhóm]
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
