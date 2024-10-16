@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+  --primary-color: #8D493A;
+  --secondary-color: #A65F4F;
+  --background-color: #121212; /* Thay đổi màu nền ở đây */
+  --text-color: #ffffff;
+  --hover-color: #C27B6A;
+}
+
+/* Sections general styling */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 0;
+  box-sizing: border-box;
+}
+
+#about, #members, #projects, #contact {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    min-height: auto;
+    height: auto;
+  }
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title span {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.title span::before,
+.title span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  left: 0;
+  bottom: 0;
+}
+
+.title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
