@@ -1,4 +1,3 @@
-// Thêm đoạn code sau vào đầu file script.js
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.transparent-header');
     const heroHeight = document.querySelector('.hero').offsetHeight;
@@ -63,7 +62,7 @@ function eraseText() {
     }
 }
 
-window.onload = typeWriter
+window.onload = typeWriter;
 
 // Navbar toggle
 const navToggle = document.querySelector('.nav-toggle');
@@ -80,54 +79,6 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         navToggle.classList.remove('active');
         navLinks.classList.remove('active');
     });
-});
-
-// Navbar hide on scroll
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector("header").style.top = "0";
-    } else {
-        document.querySelector("header").style.top = "-70px";
-    }
-    prevScrollpos = currentScrollPos;
-}
-
-// Form submission
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById("contact-form");
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Kiểm tra CAPTCHA (cần xử lý phía server)
-        const captcha = form.querySelector('input[name="captcha"]').value;
-        
-        // Gửi dữ liệu form đến server (sử dụng Fetch API)
-        fetch('submit-form.php', {
-            method: 'POST',
-            body: new FormData(form)
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert("Tin nhắn đã được gửi thành công!");
-                form.reset();
-            } else {
-                alert("Có lỗi xảy ra. Vui lòng thử lại sau.");
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert("Có lỗi xảy ra. Vui lòng thử lại sau.");
-        });
-    });
-});
-
-// Refresh CAPTCHA
-document.querySelector('.captcha img').addEventListener('click', function() {
-    this.src = 'captcha.php?' + new Date().getTime();
 });
 
 // Smooth scrolling for anchor links
@@ -154,7 +105,7 @@ document.querySelectorAll('.member-card').forEach(card => {
     });
 });
 
-// Thêm đoạn code sau vào cuối file script.js
+// Resize handling
 let lastWidth = window.innerWidth;
 let lastHeight = window.innerHeight;
 let resizeTimer;
@@ -205,42 +156,6 @@ window.addEventListener('orientationchange', () => {
 // Khởi tạo ban đầu
 handleResize();
 
-// Thêm đoạn code sau vào file script.js
-document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('header');
-    const heroHeight = document.querySelector('.hero').offsetHeight;
-
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > heroHeight - 100) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-});
-
-// Thêm đoạn code sau vào cuối file script.js
-let lastScrollTop = 0;
-const header = document.querySelector('header');
-const headerHeight = header.offsetHeight;
-
-window.addEventListener('scroll', function() {
-    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (currentScrollTop > lastScrollTop && currentScrollTop > headerHeight) {
-        // Cuộn xuống
-        header.classList.add('hidden');
-    } else {
-        // Cuộn lên
-        header.classList.remove('hidden');
-    }
-    
-    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
-}, false);
-
-// Giữ nguyên các đoạn mã JavaScript khác
-
-// Thêm đoạn code sau vào cuối file script.js
 function handleProjectResize() {
     const projectGrid = document.querySelector('.project-grid');
     const projects = document.querySelectorAll('.project');
@@ -272,21 +187,6 @@ window.addEventListener('orientationchange', () => {
 // Khởi tạo ban đầu
 handleProjectResize();
 
-// Smooth hover effect for project cards
-document.querySelectorAll('.project').forEach(project => {
-    project.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-5px)';
-        this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
-    });
-
-    project.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
-        this.style.boxShadow = 'none';
-    });
-});
-
-// Thêm đoạn code sau vào cuối file script.js
-
 // Đảm bảo rằng các section có chiều cao tối thiểu bằng chiều cao của viewport
 function adjustSectionHeight() {
     const sections = document.querySelectorAll('section');
@@ -300,3 +200,4 @@ function adjustSectionHeight() {
 // Gọi hàm khi trang được tải và khi cửa sổ thay đổi kích thước
 window.addEventListener('load', adjustSectionHeight);
 window.addEventListener('resize', adjustSectionHeight);
+
