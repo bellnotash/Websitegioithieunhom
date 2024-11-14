@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Hamburger menu
 function hamburg() {
-    const navbar = document.querySelector(".dropdown")
+    const navbar = document.querySelector(".dropdown");
     navbar.style.display = "block";
-    navbar.style.transform = "translateY(0px)"
+    navbar.style.transform = "translateY(0px)";
 }
 
 function cancel() {
-    const navbar = document.querySelector(".dropdown")
-    navbar.style.transform = "translateY(-500px)"
+    const navbar = document.querySelector(".dropdown");
+    navbar.style.transform = "translateY(-500px)";
     setTimeout(() => {
         navbar.style.display = "none";
     }, 300);
@@ -31,11 +31,9 @@ const texts = [
     "NHÓM SÁNG TẠO",
     "ĐỘI NGŨ CHUYÊN NGHIỆP",
     "ĐỒNG ĐỘI TIN CẬY"
-]
-
+];
 let speed = 100;
 const textElements = document.querySelector(".typewriter-text");
-
 let textIndex = 0;
 let characterIndex = 0;
 
@@ -44,21 +42,19 @@ function typeWriter() {
         textElements.innerHTML += texts[textIndex].charAt(characterIndex);
         characterIndex++;
         setTimeout(typeWriter, speed);
-    }
-    else {
-        setTimeout(eraseText, 1000)
+    } else {
+        setTimeout(eraseText, 1000);
     }
 }
 
 function eraseText() {
     if (textElements.innerHTML.length > 0) {
         textElements.innerHTML = textElements.innerHTML.slice(0, -1);
-        setTimeout(eraseText, 50)
-    }
-    else {
+        setTimeout(eraseText, 50);
+    } else {
         textIndex = (textIndex + 1) % texts.length;
         characterIndex = 0;
-        setTimeout(typeWriter, 500)
+        setTimeout(typeWriter, 500);
     }
 }
 
@@ -85,7 +81,6 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
@@ -116,7 +111,6 @@ function handleResize() {
     const memberCards = document.querySelectorAll('.member-card');
     const memberGrid = document.querySelector('.member-grid');
     
-    // Kiểm tra xem có sự thay đổi đáng kể về kích thước hoặc orientation không
     if (
         Math.abs(currentWidth - lastWidth) > 50 ||
         Math.abs(currentHeight - lastHeight) > 50 ||
@@ -125,7 +119,6 @@ function handleResize() {
         (lastWidth < 1024 && currentWidth >= 1024) ||
         (lastWidth >= 1024 && currentWidth < 1024)
     ) {
-        // Tạm thời ẩn grid để tránh hiệu ứng nhấp nháy
         memberGrid.style.opacity = '0';
         memberGrid.style.transition = 'none';
 
@@ -153,14 +146,12 @@ window.addEventListener('orientationchange', () => {
     setTimeout(handleResize, 100);
 });
 
-// Khởi tạo ban đầu
 handleResize();
 
 function handleProjectResize() {
     const projectGrid = document.querySelector('.project-grid');
     const projects = document.querySelectorAll('.project');
     
-    // Tạm thời ẩn grid để tránh hiệu ứng nhấp nháy
     projectGrid.style.opacity = '0';
     projectGrid.style.transition = 'none';
 
@@ -184,10 +175,9 @@ window.addEventListener('orientationchange', () => {
     setTimeout(handleProjectResize, 100);
 });
 
-// Khởi tạo ban đầu
 handleProjectResize();
 
-// Đảm bảo rằng các section có chiều cao tối thiểu bằng chiều cao của viewport
+// Ensure sections have a minimum height equal to the viewport height
 function adjustSectionHeight() {
     const sections = document.querySelectorAll('section');
     const viewportHeight = window.innerHeight;
@@ -197,7 +187,6 @@ function adjustSectionHeight() {
     });
 }
 
-// Gọi hàm khi trang được tải và khi cửa sổ thay đổi kích thước
 window.addEventListener('load', adjustSectionHeight);
 window.addEventListener('resize', adjustSectionHeight);
 
