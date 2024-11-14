@@ -78,7 +78,7 @@ header.scrolled {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/img/bia.jpg'); /* Thay đổi đường dẫn này */
+    background-image: url('img/bia.jpg'); /* Thay đổi đường dẫn này */
     background-size: cover;
     background-position: center;
 }
