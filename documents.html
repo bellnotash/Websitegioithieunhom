@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Liệu - NHÓM 22</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="documents.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="img/22.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Sử dụng lại header từ trang chủ -->
+    <header class="transparent-header scrolled">
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html"><span>NHÓM 22</span></a>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Trang Chủ</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="documents.html">Trang Tài Liệu</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#contract">Hợp Đồng</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#assignments">Phân Công</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#reports">Báo Cáo</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="#demo">Demo</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="index.html">Trang Chủ</a>
+                    <a href="documents.html">Trang Tài Liệu</a>
+                    <a href="#contract">Hợp Đồng</a>
+                    <a href="#assignments">Phân Công</a>
+                    <a href="#reports">Báo Cáo</a>
+                    <a href="#demo">Demo</a>
+                </div>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="documents-page">
+        <!-- Hợp đồng nhóm -->
+        <section id="contract" class="document-section">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>HỢP ĐỒNG NHÓM</span>
+                </div>
+                <div class="document-content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="pdf-viewer">
+                        <embed src="HopDongThanhLapNhom.pdf" type="application/pdf" width="100%" height="600px">
+                    </div>
+                    <a href="HopDongThanhLapNhom.pdf" class="download-btn" download>
+                        <i class="fas fa-download"></i> Tải xuống hợp đồng
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phân công công việc -->
+        <section id="assignments" class="document-section">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>PHÂN CÔNG CÔNG VIỆC</span>
+                </div>
+                <div class="assignments-grid" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <!-- Trưởng nhóm -->
+                    <div class="assignment-card">
+                        <div class="member-info">
+                            <img src="img/avatar1.jpg" alt="Đặng Ngọc Thiên">
+                            <h3 title="Đặng Ngọc Thiên">Đặng Ngọc Thiên</h3>
+                            <p>Trưởng nhóm</p>
+                        </div>
+                        <div class="tasks">
+                            <h4>Nhiệm vụ:</h4>
+                            <ul>
+                                <li>Quản lý tiến độ dự án</li>
+                                <li>Thiết kế giao diện trang chủ</li>
+                                <li>Phát triển trang chi tiết sản phẩm</li>
+                                <li>Tối ưu UX/UI toàn website</li>
+                                <li>Kiểm thử và sửa lỗi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phó nhóm -->
+                    <div class="assignment-card">
+                        <div class="member-info">
+                            <img src="img/avatar2.jpg" alt="Trịnh Xuân Thiện">
+                            <h3 title="Trịnh Xuân Thiện">Trịnh Xuân Thiện</h3>
+                            <p>Phó nhóm</p>
+                        </div>
+                        <div class="tasks">
+                            <h4>Nhiệm vụ:</h4>
+                            <ul>
+                                <li>Phát triển giỏ hàng và thanh toán</li>
+                                <li>Xây dựng hệ thống đánh giá</li>
+                                <li>Tích hợp API thanh toán</li>
+                                <li>Quản lý cơ sở dữ liệu</li>
+                                <li>Tối ưu hiệu suất website</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Thành viên 1 -->
+                    <div class="assignment-card">
+                        <div class="member-info">
+                            <img src="img/avatar3.jpg" alt="Lý Huỳnh Ngọc Trung">
+                            <h3 title="Lý Huỳnh Ngọc Trung">Lý Huỳnh Ngọc Trung</h3>
+                            <p>Thành viên</p>
+                        </div>
+                        <div class="tasks">
+                            <h4>Nhiệm vụ:</h4>
+                            <ul>
+                                <li>Thiết kế trang danh mục sản phẩm</li>
+                                <li>Xây dựng hệ thống tìm kiếm</li>
+                                <li>Phát triển bộ lọc sản phẩm</li>
+                                <li>Tối ưu SEO website</li>
+                                <li>Viết nội dung và mô tả sản phẩm</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Thành viên 2 -->
+                    <div class="assignment-card">
+                        <div class="member-info">
+                            <img src="img/avatar4.jpg" alt="Vũ Đăng Khoa">
+                            <h3 title="Vũ Đăng Khoa">Vũ Đăng Khoa</h3>
+                            <p>Thành viên</p>
+                        </div>
+                        <div class="tasks">
+                            <h4>Nhiệm vụ:</h4>
+                            <ul>
+                                <li>Phát triển hệ thống đăng nhập</li>
+                                <li>Xây dựng trang quản lý tài khoản</li>
+                                <li>Thiết kế trang tin tức/blog</li>
+                                <li>Tích hợp chat hỗ trợ</li>
+                                <li>Phát triển tính năng wishlist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Báo cáo -->
+        <section id="reports" class="document-section">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>BÁO CÁO</span>
+                </div>
+                <div class="timeline" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="timeline-container left">
+                        <div class="timeline-content">
+                            <div class="date">16/11/2024</div>
+                            <h3>Khởi động dự án</h3>
+                            <p>Lập kế hoạch và thiết kế ban đầu cho website bán nước hoa.</p>
+                            <ul class="milestone-list">
+                                <li>Xác định yêu cầu và phạm vi dự án</li>
+                                <li>Phân tích đối tượng người dùng</li>
+                                <li>Lên ý tưởng thiết kế UI/UX</li>
+                                <li>Tạo sitemap và user flow</li>
+                            </ul>
+                            <a href="documents/report1.pdf" class="download-btn" download>
+                                <i class="fas fa-download"></i> Tải xuống báo cáo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="timeline-container right">
+                        <div class="timeline-content">
+                            <div class="date">23/11/2024</div>
+                            <h3>Thiết kế UI/UX</h3>
+                            <p>Hoàn thành giai đoạn thiết kế giao diện chi tiết.</p>
+                            <ul class="milestone-list">
+                                <li>Thiết kế wireframe cho tất cả trang</li>
+                                <li>Tạo prototype trên Figma</li>
+                                <li>Xây dựng design system</li>
+                                <li>Thiết kế responsive layout</li>
+                            </ul>
+                            <a href="documents/report2.pdf" class="download-btn" download>
+                                <i class="fas fa-download"></i> Tải xuống báo cáo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="timeline-container left">
+                        <div class="timeline-content">
+                            <div class="date">30/11/2024</div>
+                            <h3>Phát triển Frontend</h3>
+                            <p>Xây dựng giao diện người dùng và các tính năng cơ bản.</p>
+                            <ul class="milestone-list">
+                                <li>Tạo trang chủ và danh mục sản phẩm</li>
+                                <li>Xây dựng trang chi tiết sản phẩm</li>
+                                <li>Thiết kế giỏ hàng và checkout</li>
+                                <li>Tích hợp responsive design</li>
+                            </ul>
+                            <a href="documents/report3.pdf" class="download-btn" download>
+                                <i class="fas fa-download"></i> Tải xuống báo cáo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="timeline-container right">
+                        <div class="timeline-content">
+                            <div class="date">07/12/2024</div>
+                            <h3>Phát triển Backend</h3>
+                            <p>Xây dựng hệ thống backend và cơ sở dữ liệu.</p>
+                            <ul class="milestone-list">
+                                <li>Thiết kế cơ sở dữ liệu</li>
+                                <li>Xây dựng API endpoints</li>
+                                <li>Tích hợp hệ thống xác thực</li>
+                                <li>Quản lý session và bảo mật</li>
+                            </ul>
+                            <a href="documents/report4.pdf" class="download-btn" download>
+                                <i class="fas fa-download"></i> Tải xuống báo cáo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="timeline-container left">
+                        <div class="timeline-content">
+                            <div class="date">14/12/2024</div>
+                            <h3>Tích hợp tính năng</h3>
+                            <p>Phát triển các tính năng nâng cao cho website.</p>
+                            <ul class="milestone-list">
+                                <li>Tích hợp thanh toán online</li>
+                                <li>Hệ thống đánh giá sản phẩm</li>
+                                <li>Tìm kiếm và lọc nâng cao</li>
+                                <li>Quản lý đơn hàng</li>
+                            </ul>
+                            <a href="documents/report5.pdf" class="download-btn" download>
+                                <i class="fas fa-download"></i> Tải xuống báo cáo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="timeline-container right">
+                        <div class="timeline-content">
+                            <div class="date">19/12/2024</div>
+                            <h3>Hoàn thiện và ra mắt</h3>
+                            <p>Kiểm thử và triển khai website.</p>
+                            <ul class="milestone-list">
+                                <li>Kiểm thử toàn diện hệ thống</li>
+                                <li>Tối ưu hiệu suất website</li>
+                                <li>Triển khai lên hosting</li>
+                                <li>Theo dõi và bảo trì hệ thống</li>
+                            </ul>
+                            <a href="documents/report6.pdf" class="download-btn" download>
+                                <i class="fas fa-download"></i> Tải xuống báo cáo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo sản phẩm -->
+        <section id="demo" class="document-section">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>DEMO SẢN PHẨM</span>
+                </div>
+                
+                <!-- User Interface Slider -->
+                <div class="slider-section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <h3 class="slider-title">Giao diện người dùng</h3>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/avatar1.jpg" alt="Trang chủ">
+                                <div class="slide-caption">Trang chủ</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/avatar2.jpg" alt="Danh sách sản phẩm">
+                                <div class="slide-caption">Danh sách sản phẩm</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/avatar3.jpg" alt="Chi tiết sản phẩm">
+                                <div class="slide-caption">Chi tiết sản phẩm</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <!-- Admin Interface Slider -->
+                <div class="slider-section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <h3 class="slider-title">Giao diện quản trị</h3>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/avatar1.jpg" alt="Dashboard">
+                                <div class="slide-caption">Dashboard</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/avatar2.jpg" alt="Quản lý sản phẩm">
+                                <div class="slide-caption">Quản lý sản phẩm</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/avatar3.jpg" alt="Quản lý đơn hàng">
+                                <div class="slide-caption">Quản lý đơn hàng</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sử dụng lại footer từ trang chủ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="logo-text">BELL OF HOPE</h2>
+                <p>
+                    Chúng tôi là đội ngũ phát triển web trẻ, năng động và sáng tạo. 
+                    Với khẩu hiệu "The More You Can", chúng tôi luôn nỗ lực để mang đến những sản phẩm tốt nhất.                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; 22521381@gm.uit.edu.vn</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Liên Kết Nhanh</h2>
+                <ul>
+                    <li><a href="documents.html">Trang Tài Liệu</a></li>
+                    <li><a href="#contract">Hợp Đồng</a></li>
+                    <li><a href="#assignments">Phân Công</a></li>
+                    <li><a href="#reports">Báo Cáo</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Liên Hệ Với Chúng Tôi</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Email của bạn...">
+                    <textarea name="message" class="text-input contact-input" placeholder="Tin nhắn của bạn..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">        
+                        <span>Gửi</span>
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 NHÓM 22 | Thiết kế bởi ĐẶNG NGỌC THIÊN
+        </div>
+    </footer>
+
+        <!-- Thêm đoạn này vào trước </body> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
